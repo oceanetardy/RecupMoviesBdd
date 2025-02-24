@@ -1,6 +1,6 @@
 import requests
 import json
-from config import API_KEY
+from config import TOKEN
 
 # Configuration
 BASE_URL_MOVIES = "https://api.themoviedb.org/3/movie/popular"
@@ -8,7 +8,7 @@ BASE_URL_GENRES = "https://api.themoviedb.org/3/genre/movie/list"
 
 HEADERS = {
     "accept": "application/json",
-    "Authorization": f"Bearer {API_KEY}"
+    "Authorization": f"Bearer {TOKEN}"
 }
 
 # Fichiers de sortie

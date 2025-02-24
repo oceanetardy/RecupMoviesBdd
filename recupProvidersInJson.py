@@ -2,13 +2,13 @@ import requests
 import json
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from config import API_KEY
+from config import TOKEN
 
 # Configuration
 BASE_URL_PROVIDERS = "https://api.themoviedb.org/3/movie/{movie_id}/watch/providers"
 HEADERS = {
     "accept": "application/json",
-    "Authorization": f"Bearer {API_KEY}"
+    "Authorization": f"Bearer {TOKEN}"
 }
 
 MOVIES_FILE = "movies.json"
